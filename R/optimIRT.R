@@ -286,7 +286,7 @@ optimIRT <- function(standata, cores=6, mml=FALSE,split=TRUE,
       )
 
       optimfit <- mize::mize(init, fg=mizelpg, max_iter=Niter,
-        method="L-BFGS",memory=100,
+        method="L-BFGS",memory=10,
         line_search='Schmidt',c1=1e-10,c2=.9,step0='schmidt',ls_max_fn=999,
         abs_tol=tol,grad_tol=0,rel_tol=0,step_tol=0,ginf_tol=0)
       init=optimfit$par
