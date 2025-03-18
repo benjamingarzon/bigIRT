@@ -104,7 +104,7 @@ scoreIRT <- function(fit, verbose=1L){
 
 
 optimIRT <- function(standata, cores=6, mml=FALSE,split=TRUE,
-  verbose=0,plot=0,tol=1e-2,Niter=2000,askmore=FALSE,stochastic=FALSE,init=NA,dohess=FALSE){
+  verbose=0,plot=0,tol=1e-2,Niter=2000,askmore=FALSE,stochastic=TRUE,init=NA,dohess=FALSE){
   # verbose=1
   # cores=8
   # plot=10
